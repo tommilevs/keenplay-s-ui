@@ -1,0 +1,16 @@
+schema: playkeen/v1
+id: keenplay-s-ui
+name: S-UI for Keenetic
+version: 0.1.0
+type: hybrid
+architectures: [arm64]
+install: app/install.sh
+update: app/update.sh
+remove: app/remove.sh
+status: app/status.sh
+terminal:
+  enabled: true
+  provider: ttyd
+  command: /opt/bin/s-ui
+  working_dir: /opt/etc/s-ui
+  port: auto
